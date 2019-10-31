@@ -1,0 +1,115 @@
+.mescrollSpinner {
+    margin: 0 auto;
+    text-align: center;
+
+    .bounce {
+        width: 6px;
+        height: 6px;
+        margin-left: 6px;
+        background-color: #999;
+        border-radius: 50%;
+        display: inline-block;
+        animation: bouncedelay 1.4s infinite ease-in-out;
+        animation-fill-mode: both;
+    }
+
+    .bounce1 {
+        animation-delay: -0.32s;
+    }
+
+    .bounce2 {
+        animation-delay: -0.16s;
+    }
+}
+
+@keyframes bouncedelay {
+
+    0%,
+    80%,
+    100% {
+        background-color: #999;
+        opacity: .2;
+    }
+
+    40% {
+        background-color: #999;
+        opacity: 1;
+    }
+}
+
+.mescroll-content {
+	padding: 0;
+}
+
+.mescroll-upwarp {
+	padding: 0;
+	min-height: 30px;
+    line-height: 30px;
+}
+
+.page-footer-box {
+    background-color: #f3f4f5;
+    height: 50px;
+    line-height: 50px;
+    padding-top: 1px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .page-footer {
+        display: table;
+        margin: 0 auto;
+        height: 12px;
+        position: relative;
+        font-size: 12px;
+        color: #999;
+
+        &::after {
+            position: absolute;
+            left: -40px;
+            top: 50%;
+            content: '';
+            width: 28px;
+            height: 1px;
+            margin-top: -1px;
+			background-color: #ccc;
+			-webkit-transform: scaleY(.5);
+            transform: scaleY(.5);
+        }
+
+        &::before {
+            position: absolute;
+            right: -40px;
+            top: 50%;
+            content: '';
+            width: 28px;
+            height: 1px;
+            margin-top: -1px;
+			background-color: #ccc;
+			-webkit-transform: scaleY(.5);
+            transform: scaleY(.5);
+        }
+    }
+}
+
+#native-no-data {
+    .mescroll-empty {
+		padding: 100px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .empty-icon {
+            margin-left: 13px;
+    		width: 120px;
+        }
+
+        .empty-tip {
+            margin-top: 25px;
+            font-size: 16px;
+            color: #999;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+/* color */
+@default: #fff;
+@primary: #166CE9;
+
+/* background */
+@gray_bg: #f3f4f5;
+@white_bg: #fff;
+
+.mixin-cursor() {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.mixin-btn(@width, @height, @color, @bgcolor, @border_color, @font_size, @border_radius) {
+    background: @bgcolor;
+    border: 1px solid @border_color;
+    box-sizing: border-box;
+    border-radius: @border_radius;
+    color: @color;
+    display: block;
+    font-size: @font_size;
+    width: @width;
+    height: @height;
+    line-height: @height;
+    padding: 0;
+	text-align: center;
+}
