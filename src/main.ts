@@ -1,11 +1,9 @@
 import Vue, { CreateElement } from 'vue'
 import router from './router'
-import App from './App.vue'
+import App from './views/App.vue'
 import { getCookie } from '@utils'
 import '@directives/focus'
 import '@filters'
-
-Vue.use(require('@packages').default)
 
 const VueAnalytics = require('vue-analytics').default
 

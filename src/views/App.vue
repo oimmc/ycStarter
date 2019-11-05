@@ -15,5 +15,5 @@
 </script>
 
 <style>
-    @import url("../../assets/style/app.less");
+    @import url("../assets/style/app.less");
 </style>

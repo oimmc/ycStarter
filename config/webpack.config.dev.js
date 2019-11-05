@@ -18,7 +18,7 @@ module.exports = merge(baseConfig, {
 		noInfo: true,
 		proxy: {
 			'/api/v3': {
-                target: 'http://10.211.4.111:8891',
+                target: 'http://11.22.33.111:8891',
                 changeOrigin: true,
                 secure: false,
                 pathRewrite: {

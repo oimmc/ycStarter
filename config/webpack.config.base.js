@@ -7,7 +7,7 @@ const { publicPath } = require('./utils')
 
 module.exports = {
 	entry: {
-        index: './src/views/integral-mall/main.ts'
+        index: './src/main.ts'
     },
 	output: {
 		publicPath,
@@ -18,7 +18,6 @@ module.exports = {
         extensions: ['.js', '.ts', '.vue', '.json'],
         alias: {
             '@utils': path.join(process.cwd(), 'src/assets/ts/utils'),
-            '@packages': path.join(process.cwd(), 'src/packages'),
             '@directives': path.join(process.cwd(), 'src/directives'),
             '@filters': path.join(process.cwd(), 'src/filters'),
             // vue: 'vue/dist/vue.js',
